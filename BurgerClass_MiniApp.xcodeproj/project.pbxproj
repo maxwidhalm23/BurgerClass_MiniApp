@@ -17,6 +17,10 @@
 		D81964CE28F4D2490007D998 /* BurgerClass_MiniAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81964CD28F4D2490007D998 /* BurgerClass_MiniAppTests.swift */; };
 		D81964D828F4D2490007D998 /* BurgerClass_MiniAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81964D728F4D2490007D998 /* BurgerClass_MiniAppUITests.swift */; };
 		D81964DA28F4D2490007D998 /* BurgerClass_MiniAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81964D928F4D2490007D998 /* BurgerClass_MiniAppUITestsLaunchTests.swift */; };
+		D81964E728F4D33C0007D998 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81964E628F4D33C0007D998 /* Burger.swift */; };
+		D8A7443D28F8409B00F65020 /* ReviewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7443C28F8409B00F65020 /* ReviewOrderViewController.swift */; };
+		D8C3E00928F6EDD700C80D5B /* CookedLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3E00828F6EDD700C80D5B /* CookedLevelViewController.swift */; };
+		D8C3E00B28F6EE3C00C80D5B /* ToppingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3E00A28F6EE3C00C80D5B /* ToppingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		D81964D328F4D2490007D998 /* BurgerClass_MiniAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerClass_MiniAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81964D728F4D2490007D998 /* BurgerClass_MiniAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerClass_MiniAppUITests.swift; sourceTree = "<group>"; };
 		D81964D928F4D2490007D998 /* BurgerClass_MiniAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerClass_MiniAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D81964E628F4D33C0007D998 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		D8A7443C28F8409B00F65020 /* ReviewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewOrderViewController.swift; sourceTree = "<group>"; };
+		D8C3E00828F6EDD700C80D5B /* CookedLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookedLevelViewController.swift; sourceTree = "<group>"; };
+		D8C3E00A28F6EE3C00C80D5B /* ToppingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		D81964A728F4D2480007D998 = {
 			isa = PBXGroup;
 			children = (
+				D8A7443C28F8409B00F65020 /* ReviewOrderViewController.swift */,
 				D81964B228F4D2480007D998 /* BurgerClass_MiniApp */,
 				D81964CC28F4D2490007D998 /* BurgerClass_MiniAppTests */,
 				D81964D628F4D2490007D998 /* BurgerClass_MiniAppUITests */,
@@ -105,6 +114,9 @@
 				D81964B528F4D2480007D998 /* SceneDelegate.swift */,
 				D81964B728F4D2480007D998 /* ViewController.swift */,
 				D81964B928F4D2480007D998 /* Main.storyboard */,
+				D8C3E00A28F6EE3C00C80D5B /* ToppingsViewController.swift */,
+				D8C3E00828F6EDD700C80D5B /* CookedLevelViewController.swift */,
+				D81964E628F4D33C0007D998 /* Burger.swift */,
 				D81964BF28F4D2490007D998 /* Assets.xcassets */,
 				D81964C128F4D2490007D998 /* LaunchScreen.storyboard */,
 				D81964C428F4D2490007D998 /* Info.plist */,
@@ -261,10 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C3E00928F6EDD700C80D5B /* CookedLevelViewController.swift in Sources */,
 				D81964BE28F4D2480007D998 /* BurgerClass_MiniApp.xcdatamodeld in Sources */,
+				D81964E728F4D33C0007D998 /* Burger.swift in Sources */,
+				D8C3E00B28F6EE3C00C80D5B /* ToppingsViewController.swift in Sources */,
 				D81964B828F4D2480007D998 /* ViewController.swift in Sources */,
 				D81964B428F4D2480007D998 /* AppDelegate.swift in Sources */,
 				D81964B628F4D2480007D998 /* SceneDelegate.swift in Sources */,
+				D8A7443D28F8409B00F65020 /* ReviewOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

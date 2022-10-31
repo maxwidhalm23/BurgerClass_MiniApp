@@ -1,24 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AKh-1w-cQo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Da Burgery?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BurgerClass_MiniApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beesechurger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aja-Ez-dxG">
+                                <rect key="frame" x="20" y="296" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beesechurger" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-yc-emR">
+                                <rect key="frame" x="20" y="325" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Hn-tR-0El" appends="YES" id="43L-L0-h0a"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Krabby Patty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kU-ll-Hvg">
+                                <rect key="frame" x="244" y="296" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="krabbyPatty" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-dt-e11">
+                                <rect key="frame" x="244" y="325" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FRV-QI-dce" appends="YES" id="Hmh-Xp-uL8"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heisenburger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwC-pz-ac3">
+                                <rect key="frame" x="20" y="534" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heisenburger" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OK-Uf4">
+                                <rect key="frame" x="20" y="563" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ui0-L9-DBf" appends="YES" id="da6-GV-ePV"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create your own!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESg-QU-Jql">
+                                <rect key="frame" x="244" y="534" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mysteryBurger" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-12-BRw">
+                                <rect key="frame" x="244" y="563" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0FV-3H-fZd" appends="YES" id="kQh-Qz-qar"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-XP-8VV">
+                                <rect key="frame" x="162" y="822" width="90" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Review Order"/>
+                                <connections>
+                                    <action selector="reviewOrderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfl-xh-wjK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="losBurgerHermanos" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-Zi-nv3">
+                                <rect key="frame" x="107" y="88" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-9b-DxA">
+                                <rect key="frame" x="20" y="793" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="CPf-Jo-5KP">
+                                <rect key="frame" x="20" y="754" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75611680746078491" green="0.33961981534957886" blue="0.083558715879917145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Rare"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Well Done"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.39239966869354248" green="0.16664120554924011" blue="0.080601610243320465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="cookedLevelAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="L7e-38-ppy"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Da Burgery?" id="qbT-kM-R4o"/>
+                    <connections>
+                        <outlet property="burgerAddedLabelOutlet" destination="Ht8-9b-DxA" id="qgD-fC-kW3"/>
+                        <outlet property="cookedLevelOutlet" destination="CPf-Jo-5KP" id="bPp-yX-BZZ"/>
+                        <segue destination="YrK-W2-5lN" kind="show" identifier="reviewOrderSegue" id="r76-kK-EpT"/>
+                        <segue destination="UIh-33-u3H" kind="show" identifier="toppingsSegue" id="cws-a6-MxG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Hn-tR-0El" userLabel="beesechurgerTap">
+                    <connections>
+                        <action selector="beesechurgerAction:" destination="BYZ-38-t0r" id="Xsx-Ff-6Mj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FRV-QI-dce" userLabel="krabbyPattyTap">
+                    <connections>
+                        <action selector="krabbyPattyAction:" destination="BYZ-38-t0r" id="WUF-Cg-9NC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ui0-L9-DBf" userLabel="heisenburgerTap">
+                    <connections>
+                        <action selector="heienburgerAction:" destination="BYZ-38-t0r" id="4xR-lE-2dM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0FV-3H-fZd" userLabel="customTap">
+                    <connections>
+                        <action selector="customAction:" destination="BYZ-38-t0r" id="KJL-57-Rhc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1000" y="82"/>
+        </scene>
+        <!--Review Order-->
+        <scene sceneID="Sl3-ke-1EB">
+            <objects>
+                <viewController id="YrK-W2-5lN" customClass="ReviewOrderViewController" customModule="BurgerClass_MiniApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOl-qp-eCt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="------------------------------------------" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Css-qH-tgu">
+                                <rect key="frame" x="65" y="208" width="285" height="407"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CFc-iw-Mwe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Review Order" id="k75-dh-j5I">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="5Ut-AE-bXD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cartTextViewOutlet" destination="Css-qH-tgu" id="aDG-CX-BIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4b-2X-cpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="782.8125"/>
+        </scene>
+        <!--Toppings-->
+        <scene sceneID="FbR-ID-rW8">
+            <objects>
+                <viewController id="UIh-33-u3H" customClass="ToppingsViewController" customModule="BurgerClass_MiniApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jB3-v9-zua">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="DCu-wa-nFH">
+                                <rect key="frame" x="87" y="296" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97925740480422974" green="0.13211557269096375" blue="0.016700239852070808" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Ketchup"/>
+                                    <segment title="Mustard"/>
+                                    <segment title="None"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.97925740480422974" green="0.13211557269096375" blue="0.016700239852070808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="condimentAction:" destination="UIh-33-u3H" eventType="valueChanged" id="OFq-ll-pxS"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="1WO-Dh-stZ">
+                                <rect key="frame" x="116" y="335" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.084437616169452667" green="0.73300272226333618" blue="0.10858679562807083" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Pickle"/>
+                                    <segment title="No Pickle"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.011476529762148857" green="0.98274606466293335" blue="0.13322830200195312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pickleAction:" destination="UIh-33-u3H" eventType="valueChanged" id="OCa-uM-Aon"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="faY-K5-jmV">
+                                <rect key="frame" x="116" y="374" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65013700723648071" green="0.38308709859848022" blue="0.90878832340240479" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Onion"/>
+                                    <segment title="No Onion"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.89230889081954956" green="0.75173336267471313" blue="0.94054371118545532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onionAction:" destination="UIh-33-u3H" eventType="valueChanged" id="n6d-j7-clJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-MG-hG1">
+                                <rect key="frame" x="116" y="413" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99963670969009399" green="0.93627268075942993" blue="0.0028218096122145653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Cheese"/>
+                                    <segment title="No Cheese"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemYellowColor"/>
+                                <connections>
+                                    <action selector="cheeseAction:" destination="UIh-33-u3H" eventType="valueChanged" id="uJm-bT-UHk"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Aeu-z3-uEv">
+                                <rect key="frame" x="120" y="491" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97925740480422974" green="0.13211557269096375" blue="0.016700239852070808" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Tomato"/>
+                                    <segment title="No Tomato"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="tomatoAction:" destination="UIh-33-u3H" eventType="valueChanged" id="aeg-4U-p7g"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="svU-2x-baG">
+                                <rect key="frame" x="120" y="530" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.084437616169452667" green="0.73300272226333618" blue="0.10858679562807083" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Lettuce"/>
+                                    <segment title="No Lettuce"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.011476529762148857" green="0.98274606466293335" blue="0.13322830200195312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="lettuceAction:" destination="UIh-33-u3H" eventType="valueChanged" id="Re1-Qq-0zj"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-8d-2U0">
+                                <rect key="frame" x="157" y="806" width="101" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Burger"/>
+                                <connections>
+                                    <action selector="addBurgerAction:" destination="UIh-33-u3H" eventType="touchUpInside" id="SlP-WG-Bbk"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-td-L6J">
+                                <rect key="frame" x="120" y="569" width="173" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92553335428237915" green="0.89868444204330444" blue="0.63445669412612915" alpha="0.49919805463576161" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Mayo"/>
+                                    <segment title="No Mayo"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.93831634521484375" green="0.89028400182723999" blue="0.73253113031387329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="mayoAction:" destination="UIh-33-u3H" eventType="valueChanged" id="ycy-dr-WqL"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttomBun" translatesAutoresizingMaskIntoConstraints="NO" id="flX-mu-ilF">
+                                <rect key="frame" x="87" y="608" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topBun" translatesAutoresizingMaskIntoConstraints="NO" id="Ka0-yv-hTD">
+                                <rect key="frame" x="87" y="160" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gae-km-HTj">
+                                <rect key="frame" x="97" y="452" width="220" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35421320796012878" green="0.17012563347816467" blue="0.075614996254444122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t7d-mb-1aH"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Toppings" id="OK8-dr-Oyg"/>
+                    <connections>
+                        <segue destination="yzo-My-tnO" kind="unwind" identifier="unwind" unwindAction="unwindSegue:" id="Pui-hT-Ik0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9M-cE-Ks2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yzo-My-tnO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Glf-Qn-c3w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AKh-1w-cQo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zsu-lx-Tcp">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lsJ-BE-NQQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzz-xY-dLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="82"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="beesechurger" width="647" height="680"/>
+        <image name="buttomBun" width="553" height="201"/>
+        <image name="heisenburger" width="300" height="168"/>
+        <image name="krabbyPatty" width="320" height="160"/>
+        <image name="losBurgerHermanos" width="820" height="780"/>
+        <image name="mysteryBurger" width="1320" height="660"/>
+        <image name="topBun" width="559" height="259"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
